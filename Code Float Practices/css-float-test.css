@@ -1,0 +1,46 @@
+nav{
+    display:none;
+    width: 33%;
+    float: left;
+    border-color: red;
+    border-width:1px;
+    border-style: solid;
+}
+
+article {
+    display:block;
+    width: 33%;
+    float: left;
+    border-color: red;
+    border-width:1px;
+    border-style: solid;
+}
+
+aside {
+    display:block;
+    width: 33%;
+    clear: left;    
+    float: left;
+    border-color: red;
+    border-width:1px;
+    border-style: solid;
+}
+
+ * {
+    display:block;
+    border-color: blue;
+    border-width:1px;
+    border-style: solid;
+ }
+
+p#square{
+    width: 99px;
+    height: 99px;
+    border-color: red;
+    border-width:1px;
+    border-style: solid;
+}
+* {    border-color: blue;
+    border-width:1px;
+    border-style: solid;
+}

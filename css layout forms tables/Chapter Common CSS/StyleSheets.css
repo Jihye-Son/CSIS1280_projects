@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    color: #003399;
+  }
+
+h1 {
+    font-size: 60px;
+    font-style: italic;
+  }
+
+
+h2 { font-size: 32px; }
+
+h3 { font-size: 24px; }
+
+h4 { font-size: 18px; }
+
+  
+p, a { font-size: 16px; }
+
+  
+a.menu {
+    margin: 10px;
+    padding: 8px;
+    background-color: #DDEEFF;
+    border-radius: 4px;
+}
+
+
+a:link { color: #0033CC; }
+
+a:hover { color: #FF6666; }
+
+a:active { color: #FF6666; }
+
+a:visited { color: #009999; }
+
+
+p#copyright {
+font-size: 12px;
+font-style: italic;
+text-align: center;
+  }

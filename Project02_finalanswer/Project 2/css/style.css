@@ -1,0 +1,610 @@
+@charset "utf-8";
+
+
+body, html {
+   height: 100%;
+   margin: 0;
+   font-family: "Noto Sans JP", sans-serif;
+   color: #505050;
+ }
+
+ div p{
+    color: #a09f9f;
+ }
+ 
+ #img1:hover, #img2:hover, #img3:hover, #img4:hover,
+ #img5:hover, #img6:hover, #img7:hover, #img8:hover {
+   opacity: 0.7;
+   cursor: pointer;
+ }
+ 
+ .modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   padding-top: 100px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0, 0, 0);
+   background-color: rgba(0, 0, 0, 0.9);
+ }
+ 
+ .modal-content {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+ }
+ 
+ .close {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+/* =========================
+   Mobile Styles: 0 to 320px 
+   =========================
+*/
+
+@media only screen and (max-width: 320px) {  
+   .header-container{
+      background-color: whitesmoke;
+      padding: 10px 10px;   
+      text-align: center;
+   }
+
+   nav ul{
+      margin: 0;
+      padding:0;
+      margin-bottom: 30px;
+   }
+
+   header h1{
+      font-weight: bold;
+      color:sandybrown;
+   }
+
+   #portfolio{
+      font-weight: bolder;
+   }
+ 
+   #profile-img{
+      width: 70%;
+
+   }
+   .nav-container{
+      vertical-align: middle;
+
+   }
+   
+   li{
+      display: block;
+      background-color: white;
+      font-weight: bolder;
+      margin-top: 5px;
+      text-align: center;
+      padding: 5px;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right:auto;
+   }
+
+   li:hover{
+      background-color: lightyellow;
+      border-radius: 15px;
+   }
+
+   a:link{
+      text-decoration: none;
+      color: rgba(75, 74, 72, 0.9);
+   }
+
+   section{
+      text-align: center;
+   }
+
+   section h3{
+      font-weight: bolder;
+   }
+
+   section p{
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+
+   .image1, .image2, .image3, .image4, 
+   .image5, .image6, .image7, .image8{
+      width: 90%;
+   }
+
+   #skill{
+      font-weight: bolder;
+   }
+
+   hr{
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 50px;
+      color: lightgrey;
+   }
+
+   footer{
+      text-align: center;
+      margin-top: 120px;
+
+   }
+
+   footer h4{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      font-size: medium;
+   }
+
+   footer p{
+      color: #a09f9f;
+   }
+
+   footer #phone a, #email a{
+      text-decoration: none;
+      color: rgb(78, 78, 78);
+      font-weight: bold;
+   }
+
+   footer div{
+      display: block;
+      margin-top: 20px;
+      padding-bottom: 50px;
+      padding-right: 0;
+   }
+ 
+   footer #footername{
+      display:block;
+      float: left;
+      margin-top: 0;
+      margin-left: 10px;
+      margin-bottom: 20px;
+      font-weight: bolder;
+      color: sandybrown;
+   }
+
+   footer #top{
+      display: block;
+      float: right;
+      margin-top: 0;
+      margin-bottom: 20px;
+      margin-right: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+   }
+
+   footer .nav-container{
+      display: none;
+   }
+   #project a{
+      text-decoration: none;
+      color:rgba(75, 74, 72, 0.9);
+   }
+}
+
+/* =========================
+   Tablet Styles 
+   =========================
+*/
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+   .modal-content {
+      width: 100%;
+    }
+
+
+   .header-container{
+      background-color: whitesmoke;
+      padding: 20px 20px 40px 20px;
+      text-align: center;
+      display: block;
+      width: 100%;
+   }
+
+   header h1{
+      font-weight: bold;
+      color: sandybrown;
+   }
+   .profile p{
+   display: flex;
+   }
+
+   nav {
+      list-style-type: none;
+      margin: 0;
+      padding:0;
+      max-width: 768px;
+      
+   }
+   nav ul{
+      padding:0;
+      width:100%;
+      text-align: center;
+   }
+ 
+   nav li{
+      display: inline-block;
+      font-weight: bolder;
+      margin-top: 5px;
+      padding: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      width: 15%;
+   }
+
+   nav li:hover{
+      background-color: lightyellow;
+      border-radius: 15px;
+   }
+
+   nav a:link{
+      text-decoration: none;
+      color :rgba(75, 74, 72, 0.9);
+   }
+   
+   #portfolio{
+      font-weight: bolder;
+      text-align: center;
+      display: block;
+      margin: 40px 40px;
+   }
+
+   #skill{
+      font-weight: bolder;
+      text-align: center;
+      display: block;
+      margin: 40px 40px;
+   }
+ 
+   #profile-img{
+      float: right;
+      width: 40%;
+      margin-right: 55px;
+      margin-left: 30px;
+
+   }
+
+   .profile p{
+      text-align: center;
+      margin-bottom: 100px;
+      margin-left: 20px;    
+   }
+
+   section{
+      width: 100%;;
+      float: left;
+      margin-left: 10px;
+      margin-right:0;
+      margin-top:0;
+      margin-bottom: 100px;
+   }
+
+   section h3{
+      font-weight: bolder;
+
+   }
+
+   section p{
+      padding-left: 25px;
+      padding-right: 15px;
+      width:80%;
+   }
+
+   .img-container{
+      width:50%;
+      float: left;
+      padding:0;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .image1, .image2, .image3, .image4, 
+   .image5, .image6, .image7, .image8{
+      width: 95%;
+      display: block;
+   }
+ 
+   #project a{
+      text-decoration: none;
+      color: rgba(75, 74, 72, 0.9);
+   }
+
+   hr{
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 50px;
+      color: lightgrey;
+   }
+
+   footer{
+      text-align: center;
+      margin-top: 120px;
+
+   }
+
+   footer h4{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      margin-bottom: 40px;
+   }
+
+   footer #contact-txt{
+      color: #a09f9f;
+      width: 65%;
+      display: block;
+      margin-left: auto;
+      margin-right:auto;
+   }
+
+   footer #phone a, #email a{
+      text-decoration: none;
+      color: rgb(78, 78, 78);
+      font-weight: bold;
+   }
+
+   footer div{
+      display: block;
+      margin-top: 20px;
+      padding-bottom: 50px;
+      padding-right: 0;
+
+   }
+ 
+
+   footer #footername{
+      display:inline-block;
+      color: sandybrown;
+      margin-top: 0;
+      margin-left: 10px;
+      margin-right:100px;
+      margin-bottom: 20px;
+      font-weight: bolder;
+   }
+
+   footer #top{
+      display: none;
+      float: right;
+      margin-top: 0;
+      margin-bottom: 20px;
+      margin-right: 10px;
+      font-weight: bolder;
+   }
+
+   footer .nav-container{
+      display: inline-block;
+      font-size: small;
+      margin-top: 0;
+      margin-bottom: 20px;
+      margin-left: 250px;
+      font-weight: bolder;
+      margin-right:0;
+      padding-right:0;
+   }
+   footer .nav-container li{
+      width: 60px;   }
+}
+
+
+/* =========================
+    Desktop Styles
+   =========================
+*/
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+   .header-container{
+      background-color: whitesmoke;
+      padding-top: 10px;
+      padding-right: 0px;
+      padding-bottom: 80px;
+      padding-left: 40px;   
+      text-align: center;
+      display: block;
+      width: 100%;
+      
+   }
+
+   header h1{
+      font-weight: bold;
+      float:left;
+      margin-left:20px;
+      color: sandybrown;
+   }
+
+   header .nav-container{
+      margin-left: 550px;
+   }
+   nav {
+      list-style-type: none;
+      margin: 0;
+      padding:0;
+      max-width: 768px;
+      
+   }
+   nav ul{
+      padding:0;
+      width:100%;
+      text-align: center;
+   }
+ 
+   nav li{
+      display: inline-block;
+      font-weight: bolder;
+      margin-top: 5px;
+      margin-bottom: 30px;
+      width: 20%;
+   }
+
+   nav li:hover{
+      background-color: lightyellow;
+      border-radius: 15px;
+   }
+
+   nav a:link{
+      text-decoration: none;
+      color:rgba(75, 74, 72, 0.9);
+   }
+   
+   #portfolio{
+      font-weight: bolder;
+      text-align: center;
+      display: block;
+      margin: 40px 40px;
+   }
+
+   #skill{
+      font-weight: bolder;
+      text-align: center;
+      display: block;
+      margin: 40px 40px;
+   }
+
+   .img-container #news{
+      text-decoration: none;
+   }
+ 
+   #profile-img{
+      float: right;
+      width: 35%;
+      margin-right: 70px;
+      margin-left: 20px;
+   }
+
+   .profile p{
+      text-align: left;
+      margin-bottom: 100px;
+      margin-left: 0px;    
+   }
+
+   section{
+      width: 100%;;
+      float: left;
+      margin-left: 70px;
+      margin-right:0;
+      margin-top:0;
+      margin-bottom: 100px;
+   }
+
+   section h3{
+      font-weight: bolder;
+
+   }
+
+   section p{
+      padding-left: 25px;
+      padding-right: 15px;
+      width:80%;
+   }
+
+   .img-container{
+      width:30%;
+      float: left;
+      padding:0;
+      margin: 0 0 40px 0;
+      text-align: center;
+   }
+
+   .image1, .image2, .image3, .image4, 
+   .image5, .image6, .image7, .image8{
+      width: 95%;
+      display: block;
+   }
+
+   #project a{
+      text-decoration: none;
+      color: rgba(75, 74, 72, 0.9);
+   }
+  
+   hr{
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 50px;
+      color: lightgrey;
+   }
+
+   footer{
+      text-align: center;
+      margin-top: 120px;
+
+   }
+
+   footer h4{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      margin-bottom: 40px;
+      font-size: large;
+   }
+
+   footer #contact-txt{
+      color: #a09f9f;
+      width: 40%;
+      display: block;
+      margin-left: auto;
+      margin-right:auto;
+   }
+
+   footer #phone a, #email a{
+      text-decoration: none;
+      color: rgb(78, 78, 78);
+      font-weight: bold;
+   }
+
+   footer div{
+      display: block;
+      margin-top: 20px;
+      padding-bottom: 50px;
+      padding-right: 0;
+   }
+ 
+
+   footer #footername{
+      display:inline-block;
+      font-size: medium;
+      margin-top: 0;
+      margin-left: 10px;
+      margin-right: 100px;
+      font-weight: bolder;
+      color: sandybrown;
+   }
+
+   footer #top{
+      display: none;
+      float: right;
+      margin-top: 0;
+      margin-bottom: 20px;
+      margin-right: 10px;
+      font-weight: bolder;
+   }
+
+   footer .nav-container{
+      display: inline-block;
+      margin-top: 0;
+      margin-left: 300px;
+      font-weight: bolder;
+      margin-right:0;
+      padding-right:0;
+   }
+   footer .nav-container li{
+      width: 85px;  
+    }
+}

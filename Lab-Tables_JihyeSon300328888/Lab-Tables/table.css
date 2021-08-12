@@ -1,0 +1,25 @@
+table{
+    background-color: rgb(253, 238, 219);
+    border-collapse: collapse;
+}
+
+img{
+    border-radius: 3%;
+    padding: 3px;
+}
+tr#maze{
+    text-align: center;
+    background-color: orangered;
+    height: 30px;
+    border-collapse: collapse;
+    color: white;
+    font-weight: bold;
+}
+
+.overhere{
+    border: 5px solid rgb(10, 95, 10);
+}
+
+tr, td{
+    border: 2px solid black;
+}

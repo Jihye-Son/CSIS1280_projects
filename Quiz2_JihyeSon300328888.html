@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+			border:1px solid black;
+		}
+		input:focus{
+			background-color: #E6E6E6;
+		}
+		fieldset{
+			margin-bottom: 4%;
+		}
+    </style>
+    <script src="answer.js"></script>
+
+</head>
+<body>
+
+    <h1>JavaScript Quiz</h1>
+	<p>Add JS code needed to Whenever the checkbox is checked, 
+        automatically copy the values from the above form to the form in the bottom, and  if unchecked, the form in the bottom should turn blank.</p>
+
+<form>
+		<fieldset>
+			<legend>Shipping Information</legend>
+			<label for ="shippName">Name:</label>
+			<input type = "text" name = "shipName" id = "shippName" required><br/>
+			<label for = "shippZip">Zip code:</label>
+			<input type = "text" name = "shipZip" id = "shippZip" pattern = "[0-9]{5}" required><br/>
+		</fieldset>
+		<input type="checkbox" id="same" name="same" onchange= "copyFunction()"/>
+		<label for = "same">Is the Billing Information the Same?</label>
+				
+		<fieldset> 
+			<legend>Office Information</legend>
+			<label for ="billing">Name:</label>
+			<input type = "text" name = "billName" id = "billing" required><br/>
+			<label for = "Zip">Zip code:</label>
+			<input type = "text" name = "billZip" id = "Zip" pattern = "[0-9]{5}" required><br/>
+		</fieldset>
+			<input type = "submit" value = "Verify"/>
+		</form>
+    
+</body>
+</html>

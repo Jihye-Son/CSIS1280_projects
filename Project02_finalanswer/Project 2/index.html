@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Project2 By Jihye Son</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP" rel="stylesheet">
+</head>
+<body>
+    <header class="header-container">
+        <h1 id="heading">JIHYE SON</h1>
+    <nav class="nav-container">
+        <ul>
+            <li><a href="#heading">HOME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="profile">
+        <img id="profile-img" src="images/responsive-layout-profile.png" alt="profile-image">
+        <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+    </div>
+    </header>
+    <section>
+    <p id="portfolio">PORTFOLIO</p>
+        <div class="img-container">
+        <img class="image1" id="img1" src="images/portfolio-1.png" alt="image1">
+        <h3>Marketing Page</h3>
+        <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>  
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="img">
+        </div>       
+        <div class="img-container">
+        <img class="image2" id="img2" src="images/portfolio-2.png" alt="image2">
+        <h3>Search Page</h3>
+        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="img">
+        </div>
+        <div class="img-container">
+            <img class="image3" id="img3"  src="images/portfolio-3.png" alt="image3">
+            <h3>Travel App</h3>
+            <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="img">
+        </div>
+        <div class="img-container">
+            <img class="image4" id="img4" src="images/portfolio-4.png" alt="image4">
+            <h3>Map of Favorite Spots</h3>
+            <p>This project uses mapping apps to plot points for my favorite sopts in the city for a do-it-yourself walking tour.</p>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="img">
+        </div>
+        <div class="img-container">
+            <img class="image5" id="img5" src="images/portfolio-5.png" alt="image5">
+            <h3>Photo Gallery</h3>
+            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>        
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="img">
+        </div>
+        <div class="img-container">
+            <img class="image6" id="img6" src="images/portfolio-6.png" alt="image6">
+            <h3>Calculator</h3>
+            <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>    
+        </div> 
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="img">
+        </div>
+    </section>
+    <section>
+    <p id="skill">SKILL</p>
+        <div class="img-container">
+            <img class="image7" id="img7" src="images/project1.jpeg" alt="image7">
+            <h3 id="project"><a href="Project1/index.html">My project1</a></h3>
+            <p>This project shows my profile and skills.</p>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="img">
+        </div>
+        <div class="img-container">
+            <img class="image8" id="img8" src="images/newspaper.jpeg" alt="image8" >
+            <h3>Newspaper</h3>
+            <p>This project is to create a newspaper.</p>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="img">
+        </div>
+    </section>     
+    <footer>      
+        <h4>CONTACT</h4>
+        <p id="contact-txt">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+        <p id="phone">Phone &nbsp;&nbsp; <a href="tel:+11115551234">+1 (111) 555-1234</a></p>
+        <p id="email">Email &nbsp;&nbsp; <a href="mailto:email@yoursite.com"> email@yoursite.com</a></p>
+        <hr>
+        <div class="footer-below">
+        <h4 id="footername">JIHYE SON</h4>
+        <h4 id="top"><a href="#heading">BACK TO TOP</a></h4>
+        <nav class="nav-container">
+            <ul>
+                <li><a href="#heading">HOME</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#skill">SKILL</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        </div>
+    </footer>
+
+    
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+          
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('img1');
+        var modalImg = document.getElementById("img01");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+
+          // Get the modal
+        var modal = document.getElementById('myModal');
+          
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('img2');
+        var modalImg = document.getElementById("img01");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+        
+        // Get the modal
+        var modal = document.getElementById('myModal');
+          
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('img3');
+        var modalImg = document.getElementById("img01");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+
+        // Get the modal
+        var modal = document.getElementById('myModal');
+          
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('img4');
+        var modalImg = document.getElementById("img01");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+      
+        // Get the modal
+        var modal = document.getElementById('myModal');
+          
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('img5');
+        var modalImg = document.getElementById("img01");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+
+        // Get the modal
+        var modal = document.getElementById('myModal');
+          
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('img6');
+        var modalImg = document.getElementById("img01");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+
+        // Get the modal
+        var modal = document.getElementById('myModal');
+          
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('img7');
+        var modalImg = document.getElementById("img01");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+
+        // Get the modal
+        var modal = document.getElementById('myModal');
+          
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('img8');
+        var modalImg = document.getElementById("img01");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+      
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+            
+        }
+
+        //When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        }
+}
+    </script>
+</body>
+</html>

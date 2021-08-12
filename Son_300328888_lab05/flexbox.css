@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+/* =========================
+   Mobile Styles: 0 to 480px 
+   =========================
+*/
+
+@media only screen and (max-width: 480px) {
+    .header-container{
+        display: flex;
+        background-color: skyblue;
+        height: 100px;
+        width : 100%;
+    }
+    .nav-container{
+        display: flex;
+        background-color: beige;
+        min-height: 40px;
+    }
+    .mainmenu{
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-content: center;
+        flex-direction: column;
+    }
+    
+    .feature-container{
+        float: left;
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+        width: 100%;
+        background-color: burlywood;
+        justify-content: space-around;
+    }
+    .feature1{
+        font-weight: bold;
+        background-color: pink;
+        border-color: red;
+        border-style: dotted;
+        flex-basis:200px;
+        flex-grow:1;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: auto;
+        text-align: center;
+        
+    }
+     .feature2 {
+        font-weight: bold;
+        background-color: pink;
+        border-color: red;
+        border-style: dotted;
+        flex-basis:200px;
+        flex-grow:1;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: auto;
+        text-align: center;
+    }
+
+    .feature3 {
+        font-weight: bold;
+        background-color: pink;
+        border-color: red;
+        border-style: dotted;
+        flex-basis:200px;
+        flex-grow:1;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: auto;
+        text-align: center;
+
+    }
+    .sidebar-container{
+        display: none;
+    }
+    footer{
+        display: flex;
+        background-color: skyblue;
+        height : 40px;
+        width: 100%;
+        line-height: 30%;     
+    }
+}
+
+
+/* =========================
+   Tablet Styles 
+   =========================
+*/
+
+@media only screen and (min-width: 481px) {
+    .header-container{
+        display: flex;
+        background-color: skyblue;
+        height: 100px;
+        width : 100%;
+    }
+    .nav-container{
+        display: flex;
+        background-color: beige;
+        min-height: 40px;
+    }
+    .mainmenu{
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-content: center;
+        flex-direction: column;
+    }
+    
+    .feature-container{
+        float: left;
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+        width: 80%;
+        background-color: burlywood;
+        justify-content: space-around;
+    }
+    .feature1{
+        font-weight: bold;
+        background-color: yellow;
+        border-color: red;
+        border-style: dotted;
+        flex-basis:30%;
+        flex-grow:1;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+        text-align: center;
+        margin-bottom: auto;
+        margin-top: 30px;
+        
+    }
+     .feature2 {
+        font-weight: bold;
+        background-color: yellow;
+        border-color: red;
+        border-style: dotted;
+        flex-basis:30%;
+        flex-grow:1;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+        text-align: center; 
+        margin-bottom: auto;
+        margin-top: 30px;
+    }
+
+    .feature3 {
+        font-weight: bold;
+        background-color: yellow;
+        border-color: red;
+        border-style: dotted;
+        flex-basis:30%;
+        flex-grow:1;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+        text-align: center;
+        margin-bottom: auto;
+    }
+    
+    .sidebar-container{
+        float: right;
+        min-width: 20%;
+        background-color: lightsalmon;
+        height: 200px;
+    }
+    footer{
+        display: flex;
+        background-color: skyblue;
+        height : 40px;
+        width: 100%;
+        line-height: 30%; 
+    }
+}
+
+
+
+/* =========================
+    Desktop Styles
+   =========================
+*/
+
+
+@media only screen and (min-width: 769px) {
+ 
+    .header-container{
+        display: flex;
+        background-color: skyblue;
+        height: 100px;
+        width : 100%;
+    }
+    .nav-container{
+        display: flex;
+        background-color: beige;
+        min-height: 40px;
+    }
+    .mainmenu{
+        display: inline-flex;
+        flex-flow: row;
+        width: 100%;
+        align-content: center;
+    }
+    .menu{
+        justify-content: flex-end;
+        text-align: center;
+        flex-grow: 1;
+        padding-top:10px;
+    }
+    
+    .feature-container{
+        float: left;
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+        width: 80%;
+        background-color: burlywood;
+        justify-content: space-around;
+    }
+    .feature1{
+        font-weight: bold;
+        background-color: lightgreen;
+        border-color: red;
+        border-style: dotted;
+        flex-basis:200px;
+        flex-grow:1;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+        text-align: center;
+        margin-bottom: auto;
+        margin-top: 30px;
+        
+    }
+     .feature2 {
+        font-weight: bold;
+        background-color: lightgreen;
+        border-color: red;
+        border-style: dotted;
+        flex-basis: 200px;;
+        flex-grow:1;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+        text-align: center; 
+        margin-bottom: auto;
+        margin-top: 30px;
+    }
+
+    .feature3 {
+        font-weight: bold;
+        background-color: lightgreen;
+        border-color: red;
+        border-style: dotted;
+        flex-basis:200px;
+        flex-grow:1;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: auto;
+    }
+    
+    .sidebar-container{
+        float: right;
+        min-width: 20%;
+        background-color: lightsalmon;
+        height: 200px;
+    }
+    footer{
+        display: flex;
+        background-color: skyblue;
+        height : 40px;
+        width: 100%;
+        line-height: 30%; 
+    }
+}
